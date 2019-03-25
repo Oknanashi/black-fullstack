@@ -24,11 +24,13 @@ mongoose
 app.use('/api/users',users)
 app.use('/api/comments',comments)
 
-app.use(express.static(__dirname))
-app.use(express.static(path.join(__dirname,'build')))
-app.get('*',(req,res)=>{
-  res.sendFile(path.resolve(__dirname,'build','index.html'))
-})
+// app.use(express.static(__dirname))
+if(process.env.NODE_ENV=='production'){
+  app.use(express.static('black/build'))
+  app.get('*',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'black','build','index.html'))
+  })
+}
 
 const port = process.env.PORT || 5000
 app.listen(port,()=>console.log(`Server running on port ${port}`))
