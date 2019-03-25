@@ -8,6 +8,7 @@
     "client": "npm start --prefix black",
     "server": "nodemon index.js",
     "node": "node index.js",
+    "start":"node index.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client-install":"npm install --prefix client",
     "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm i --prefix black && npm run build --prefix black"
