@@ -92,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MovieDetails.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MovieDetails.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/black/src/components/MovieDetails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+            <state relative-caret-position="153">
+              <caret line="144" selection-start-line="144" selection-end-line="145" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -104,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="111" />
             </state>
           </provider>
         </entry>
@@ -152,11 +152,11 @@
         <option value="$PROJECT_DIR$/config/keys_dev" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/black/package.json" />
         <option value="$PROJECT_DIR$/black/src/components/Movie.js" />
         <option value="$PROJECT_DIR$/black/src/components/TvDetails.js" />
         <option value="$PROJECT_DIR$/black/src/components/MovieDetails.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -275,15 +275,15 @@
       <workItem from="1553419541255" duration="14879000" />
       <workItem from="1553512967098" duration="12065000" />
       <workItem from="1553525063305" duration="4557000" />
-      <workItem from="1553530843159" duration="4429000" />
+      <workItem from="1553530843159" duration="4564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35930000" />
+    <option name="totallyTimeSpent" value="36065000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="177" y="270" width="1487" height="1027" extended-state="0" />
+    <frame x="124" y="11" width="1487" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17322291" />
@@ -494,13 +494,6 @@
     <entry file="file://$PROJECT_DIR$/black/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/keys_dev">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -551,11 +544,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/black/src/components/MovieDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="144" column="22" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+        <state relative-caret-position="153">
+          <caret line="144" selection-start-line="144" selection-end-line="145" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="111" />
         </state>
       </provider>
     </entry>
