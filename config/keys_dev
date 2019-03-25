@@ -1,0 +1,4 @@
+module.exports = {
+  mongoURI:'mongodb+srv://Oknanashi:23456789dFg@cluster0-6hzkb.mongodb.net/test?retryWrites=true',
+  secretOrKey:'secret'
+}
