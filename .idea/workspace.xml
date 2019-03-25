@@ -94,6 +94,7 @@
       <find>currentMov</find>
       <find>updatePa</find>
       <find>console.log</find>
+      <find>-mov</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,7 +139,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="720" />
+    <option name="x" value="702" />
+    <option name="y" value="10" />
     <option name="width" value="1043" />
     <option name="height" value="1027" />
   </component>
