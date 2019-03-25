@@ -227,6 +227,7 @@ export class MoviesDetails extends Component {
         addToWatchList={this.addToWatchList}
                     comments={this.state.comments}
                     user={this.props.user}
+                    url={this.props.match.url}
                     newComments={this.newComments}
                     updatePage={this.updatePage}>
         </MovieShow>
@@ -258,7 +259,7 @@ export class MovieShow extends Component{
       e.preventDefault()
       console.log(this.props.user)
       const sendPost = {name:this.props.user.name, text : this.state.text,movie:this.props.videos.id}
-      axios.post(`https://black-fullstack.herokuapp.com/api/comments${this.props.match.url}`,sendPost)
+      axios.post(`https://black-fullstack.herokuapp.com/api/comments${this.props.url}`,sendPost)
         .then(res=>{
             console.log(res)
             this.props.newComments()

@@ -55,7 +55,7 @@ const instance = axios.create({baseURL:'http://localhost:5000'})
         }
         const id = localStorage.getItem('key')
         const idObj = {id:id}
-        axios.post('api/users/current',idObj)
+        axios.post(`https://black-fullstack.herokuapp.com/api/users/current`,idObj)
           .then(res=>{
 
             this.setState({
