@@ -72,7 +72,7 @@ router.post('/login',(req,res)=>{
 
     })
 })
-//@route GET api/users/current
+//@route POST api/users/current
 //@access Private
 router.post('/current',(req,res)=>{
   const id = req.body.id

@@ -59,7 +59,7 @@ export class MoviesDetails extends Component {
     setTimeout(() => {
       this.setState({fakeData: "I am the app header"})
     }, 1500)
-     await axios.get(`http://localhost:5000/api/comments${this.props.match.url}`)
+     await axios.get(`api/comments${this.props.match.url}`)
       .then(res=>{
         this.setState({comments:res.data.movie})
         console.log(this.state.comments)
@@ -192,7 +192,7 @@ export class MoviesDetails extends Component {
         videos:videosRes,
         recommendations:recommendsRes
       })
-      axios.get(`http://localhost:5000/api/comments${this.props.match.url}`)
+      axios.get(`api/comments${this.props.match.url}`)
         .then(res=>{
           this.setState({comments:res.data.movie})
           console.log(res.data.movie)
@@ -202,7 +202,7 @@ export class MoviesDetails extends Component {
 
   }
   newComments = () =>{
-     axios.get(`http://localhost:5000/api/comments${this.props.match.url}`)
+     axios.get(`api/comments${this.props.match.url}`)
       .then(res=>{
         this.setState({comments:res.data.movie})
         console.log(res.data.movie)
@@ -258,7 +258,7 @@ export class MovieShow extends Component{
       e.preventDefault()
       console.log(this.props.user)
       const sendPost = {name:this.props.user.name, text : this.state.text,movie:this.props.videos.id}
-      axios.post('http://localhost:5000/api/comments/movie/id',sendPost)
+      axios.post('api/comments/movie/id',sendPost)
         .then(res=>{
             console.log(res)
             this.props.newComments()

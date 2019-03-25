@@ -27,7 +27,7 @@ class Register extends React.Component {
         email:this.state.email,
         password:this.state.password,
       }
-    axios.post('http://localhost:5000/api/users/register',userData)
+    axios.post('api/users/register',userData)
       .then(res=>{
           console.log(res)
           localStorage.setItem('key',res.data._id)

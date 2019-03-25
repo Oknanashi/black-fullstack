@@ -25,7 +25,7 @@ class Login extends React.Component {
       email:this.state.email,
       password:this.state.password,
     }
-    axios.post('http://localhost:5000/api/users/login',userData)
+    axios.post('api/users/login',userData)
       .then(res=>{
         console.log(res)
         localStorage.setItem('key',res.data.id)
