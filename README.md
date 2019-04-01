@@ -2,6 +2,8 @@ Full-stack React app, using:\
 Various react patterns(hooks, lifcycle methods, conditional rendering, etc.)\
 <b>Backend</b>: Node.js, Express, MongoDB, Mongoose\
 No passport yet, Google Oauth to be added in the future\
+App to be refactored to support Redux\
+Favourites are made with localstorage\
 Encrypted passwords\
 Fetching tmdb api\
 Jquery\
