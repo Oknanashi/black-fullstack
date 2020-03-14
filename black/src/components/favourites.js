@@ -21,7 +21,7 @@ export default class Favourites extends Component {
         this.setState({
           showMovies:false
         })
-        const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`);
+        const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=979c677011397c51c03888adfa9b06ac&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`);
         const shorted = await res.json();
         this.setState({
           recommends: shorted.results,
@@ -35,7 +35,7 @@ export default class Favourites extends Component {
         movieArray[movieArray.length-1] = movieArray[movieArray.length-1].slice(0,-1)
         for(let movieID of movieArray){
           try{
-            const res = await fetch(`https://api.themoviedb.org/3/movie/${movieID}?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US`);
+            const res = await fetch(`https://api.themoviedb.org/3/movie/${movieID}?api_key=979c677011397c51c03888adfa9b06ac&language=en-US`);
             const movie = await res.json();
             this.setState({
               showMovies:true,

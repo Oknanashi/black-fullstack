@@ -18,9 +18,9 @@ export default class TvDetails extends Component {
   async componentDidMount(){
     console.log(this.props.match.url)
     try{
-      const res = await fetch(`https://api.themoviedb.org/3${this.props.match.url}?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US`);
-      const videos = await fetch(`https://api.themoviedb.org/3${this.props.match.url}/videos?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US`);
-      const recommends = await fetch(`https://api.themoviedb.org/3${this.props.match.url}/recommendations?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US&page=1`);
+      const res = await fetch(`https://api.themoviedb.org/3${this.props.match.url}?api_key=979c677011397c51c03888adfa9b06ac&language=en-US`);
+      const videos = await fetch(`https://api.themoviedb.org/3${this.props.match.url}/videos?api_key=979c677011397c51c03888adfa9b06ac&language=en-US`);
+      const recommends = await fetch(`https://api.themoviedb.org/3${this.props.match.url}/recommendations?api_key=979c677011397c51c03888adfa9b06ac&language=en-US&page=1`);
       const recommendsRes = await recommends.json();
       const show = await res.json();
       const videosRes = await videos.json();
@@ -115,9 +115,9 @@ export default class TvDetails extends Component {
     console.log(this.props.match.url,prevProps.match.url)
     if (this.props.match.url !== prevProps.match.url) {
       console.log(this.props.currentPage,prevProps.currentPage)
-      const res = await fetch(`https://api.themoviedb.org/3${this.props.match.url}?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US`);
-      const videos = await fetch(`https://api.themoviedb.org/3${this.props.match.url}/videos?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US`);
-      const recommends = await fetch(`https://api.themoviedb.org/3${this.props.match.url}/recommendations?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US&page=1`);
+      const res = await fetch(`https://api.themoviedb.org/3${this.props.match.url}?api_key=979c677011397c51c03888adfa9b06ac&language=en-US`);
+      const videos = await fetch(`https://api.themoviedb.org/3${this.props.match.url}/videos?api_key=979c677011397c51c03888adfa9b06ac&language=en-US`);
+      const recommends = await fetch(`https://api.themoviedb.org/3${this.props.match.url}/recommendations?api_key=979c677011397c51c03888adfa9b06ac&language=en-US&page=1`);
       const recommendsRes = await recommends.json();
       const show = await res.json();
       const videosRes = await videos.json();

@@ -16,7 +16,7 @@ export default class WatchList extends Component {
     movieArray[movieArray.length-1] = movieArray[movieArray.length-1].slice(0,-1)
     for(let movieID of movieArray){
       try{
-        const res = await fetch(`https://api.themoviedb.org/3/movie/${movieID}?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US`);
+        const res = await fetch(`https://api.themoviedb.org/3/movie/${movieID}?api_key=979c677011397c51c03888adfa9b06ac&language=en-US`);
         const movie = await res.json();
         this.setState({
           movies: [...this.state.movies,movie]

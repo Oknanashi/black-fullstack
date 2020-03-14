@@ -22,9 +22,9 @@ export default class MoviesList extends Component {
 
   async componentDidMount(){
     console.log('MOVIELIST')
-      const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${this.props.currentMoviePage}`);
+      const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=979c677011397c51c03888adfa9b06ac&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${this.props.currentMoviePage}`);
       const movies = await res.json();
-      const tvshowsRes = await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US&page=${this.props.currentTvPage}`)
+      const tvshowsRes = await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=979c677011397c51c03888adfa9b06ac&language=en-US&page=${this.props.currentTvPage}`)
       const shows = await tvshowsRes.json();
       this.setState({
         movies: movies.results,
@@ -41,7 +41,7 @@ export default class MoviesList extends Component {
   async componentDidUpdate(prevProps){
     if (this.props.currentMoviePage !== prevProps.currentMoviePage) {
       console.log(this.props.currentMoviePage,prevProps.currentMoviePage)
-      const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${this.props.currentMoviePage}`);
+      const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=979c677011397c51c03888adfa9b06ac&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${this.props.currentMoviePage}`);
       const movies = await res.json();
       this.setState({
         movies: movies.results,
@@ -52,7 +52,7 @@ export default class MoviesList extends Component {
     }
     if (this.props.currentTvPage !== prevProps.currentTvPage) {
       console.log(this.props.currentTvPage,prevProps.currentTvPage)
-      const res = await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=d4c86d3d23078bb5e3ea14ae379a2726&language=en-US&page=${this.props.currentTvPage}`);
+      const res = await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=979c677011397c51c03888adfa9b06ac&language=en-US&page=${this.props.currentTvPage}`);
       const movies = await res.json();
       this.setState({
         shows: movies.results,
