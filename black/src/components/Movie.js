@@ -8,7 +8,7 @@ const POSTER_PATH = 'https://image.tmdb.org/t/p/w154';
 
 const Movie = ({movie,updatePage}) => (
       <div className="Movie">
-        <Link to={`/movie/${movie.id}`} onClick={()=>updatePage(movie.id)}>
+        <Link to={`/movie/${movie.id}`} >
           <img className="" src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title}/>
           <h6 className="">{movie.title}</h6>
         </Link>
